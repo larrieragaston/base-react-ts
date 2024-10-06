@@ -10,6 +10,7 @@ export const StudentsList: FC = () => {
   const [isLoading, setIsLoading] = useState(false)
   const [isFiltered, setIsFiltered] = useState(false)
   const [filteredStudents, setFilteredStudents] = useState<Array<StudentData>>([])
+  const [searchText, setSearchText] = useState<string>('')
 
   useEffect(() => {
       console.log('Buscando la informacion de los alumnos...')
@@ -32,6 +33,18 @@ export const StudentsList: FC = () => {
     setIsFiltered(prevValue => !prevValue)
   }
 
+  const handleInputChange: React.ChangeEventHandler<HTMLInputElement> | undefined = (e) => { 
+    const text = e.target.value;
+    
+    setSearchText(text)
+
+    setIsFiltered(false)
+
+    setFilteredStudents(students.filter((student) =>
+      student.name.toLowerCase().includes(text.toLowerCase())
+    ));
+  }
+
   return (
     <>
     {isLoading ?   (
@@ -39,7 +52,8 @@ export const StudentsList: FC = () => {
       ) : 
       filteredStudents.length > 0 ? <>
           <h3>A continuación se mostrará el listado de alumnos</h3>
-          <button onClick={onFilterClick}>Filtrar alumnos libres</button>
+          <button onClick={onFilterClick}>{isFiltered ? 'Quitar filtro' : 'Filtrar'} alumnos libres</button>
+          <input type="text" value={searchText} onChange={handleInputChange} placeholder='Ingrese nombre/apellido a buscar'/>
           <ul>
           {filteredStudents.map(student => <Student {...student}/>) }
           </ul>
