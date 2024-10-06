@@ -1,0 +1,92 @@
+[
+  {
+    "idNumber": 150393,
+    "name": "ANGELICO, Ignacio",
+    "attendance": "Regular",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 31296,
+    "name": "CABALLERO, Silvana",
+    "attendance": "Regular",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 153759,
+    "name": "DI LELLA, Matias Agustin",
+    "attendance": "Regular",
+    "can_promote": "N"
+  },
+  {
+    "idNumber": 18006,
+    "name": "DONATO, Pablo Gabriel",
+    "attendance": "Regular",
+    "can_promote": "N"
+  },
+  {
+    "idNumber": 152247,
+    "name": "GARAY, Carlos Alfredo",
+    "attendance": "Libre",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 150736,
+    "name": "GARBERS, Esteban Emilio",
+    "attendance": "Regular",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 152857,
+    "name": "MARTINEZ MARQUES, Juan Manuel",
+    "attendance": "Regular",
+    "can_promote": "N"
+  },
+  {
+    "idNumber": 150498,
+    "name": "OLIVA, Lucas Gabriel",
+    "attendance": "Regular",
+    "can_promote": "N"
+  },
+  {
+    "idNumber": 153743,
+    "name": "OLIVERA FEDULO, Nahuel Nicolas",
+    "attendance": "Regular",
+    "can_promote": "N"
+  },
+  {
+    "idNumber": 26450,
+    "name": "PUCA, Antonia",
+    "attendance": "Regular",
+    "can_promote": "N"
+  },
+  {
+    "idNumber": 152742,
+    "name": "REYNA CAMPOS, Luis Eduardo",
+    "attendance": "Regular",
+    "can_promote": "N"
+  },
+  {
+    "idNumber": 25340,
+    "name": "RUIZ DIA, Sergio Omar",
+    "attendance": "Regular",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 31344,
+    "name": "SALVO, Guillermo Andres",
+    "attendance": "Regular",
+    "can_promote": "N"
+  },
+  {
+    "idNumber": 153665,
+    "name": "STEIN, Maximiliano",
+    "attendance": "Regular",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 151532,
+    "name": "STELLA, Facundo Carlos",
+    "attendance": "Libre",
+    "can_promote": "N"
+  }
+]
