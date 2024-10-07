@@ -4,9 +4,12 @@ import studentsJSON from '../../data/students-2024.json';
 import type { StudentProps } from '../../types/student.types';
 import { StudentsFilters } from './StudentsFilters';
 import { StudentsTable } from './StudentsTable';
+import subjectJSON from '../../data/subject-info.json';
+import { Subject } from '../../types/subject.types';
 
 export const StudentsList: FC = () => {
   const students = studentsJSON as Array<StudentProps>
+  const subject = subjectJSON as Subject
 
   const [isLoading, setIsLoading] = useState(false)
   const [isFiltered, setIsFiltered] = useState(false)
@@ -33,6 +36,8 @@ export const StudentsList: FC = () => {
 
   return (
     <>
+    <h1>Hola clase de {subject.name}</h1>
+    <h2>Los saluda {subject.teacher}</h2>
     {isLoading ? 
       <p>Cargando...</p> :
       <>

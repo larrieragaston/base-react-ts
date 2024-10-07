@@ -1,18 +1,14 @@
 import './App.css';
-import subjectJSON from './data/subject-info.json';
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import { Home } from './modules/home';
 import { StudentsList } from './modules/students';
-import { Subject } from './types/subject.types';
 
-function App() {
-  const subject = subjectJSON as Subject
-  
-  return (
-    <div>
-      <h1>Hola clase de {subject.name}</h1>
-      <h2>Los saluda {subject.teacher}</h2>
-      <StudentsList />
-    </div>
-  )
-}
-
-export default App
+export const App = () => 
+(<div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="students" element={<StudentsList />} />
+      </Routes>
+    </BrowserRouter>
+  </div>)
