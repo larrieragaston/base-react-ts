@@ -1,9 +1,6 @@
 import type {FC} from 'react'
-import { Student, StudentProps } from './Student'
-
-interface StudentsTableProps {
-  students: Array<StudentProps>;
-}
+import type { StudentsTableProps } from '../../types/student.types'
+import { Student } from '../../components/Student'
 
 export const StudentsTable: FC<StudentsTableProps> = ({students}) => {
   return (
