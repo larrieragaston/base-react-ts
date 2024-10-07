@@ -1,14 +1,5 @@
 import type {FC} from "react"
-
-type StudentAttendance = "Regular" | "Libre"
-type StudentCanPromote = "S" | "N"
-
-export interface StudentProps {
-  idNumber: number,
-  name: string,
-  attendance:  StudentAttendance,
-  can_promote: StudentCanPromote
-}
+import { StudentProps } from "../types/student.types"
 
 export const Student: FC<StudentProps> = ({idNumber, name, attendance, can_promote}) => (
   <tr key={idNumber}>

@@ -1,11 +1,6 @@
 import type {FC} from 'react'
-
-interface StudentsFiltersProps {
-  isFiltered: boolean;
-  setIsFiltered: (isFiltered: boolean | ((prevValue: any) => boolean)) => void;
-  searchText: string;
-  setSearchText: (searchText: string) => void
-}
+import { StudentsFiltersProps } from '../../types/student.types'
+import '../../styles/students.css'
 
 export const StudentsFilters: FC<StudentsFiltersProps> = ({isFiltered, setIsFiltered, searchText, setSearchText}) => {
   const onFilterClick = () => {
@@ -17,7 +12,7 @@ export const StudentsFilters: FC<StudentsFiltersProps> = ({isFiltered, setIsFilt
   }
 
   return (
-    <div style={{display: 'flex', justifyContent: 'space-around'}}>
+    <div className='students-filters'>
         <h3>Filtros</h3>
 
         <button onClick={onFilterClick}>{isFiltered ? 'Quitar filtro' : 'Filtrar'} alumnos libres</button>
