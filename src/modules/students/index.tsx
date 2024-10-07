@@ -39,7 +39,6 @@ export const StudentsList: FC = () => {
 
   return (
     <>
-      <h1>Hola clase de {subject.name}</h1>
       <h2>Los saluda {subject.teacher}</h2>
       {isLoading ? (
         <p>Cargando...</p>
