@@ -3,10 +3,11 @@ import '../../styles/layout.css'
 
 export const Layout = () => {
   const menuItems = [
-    { href: '/', title: 'Home' },
+    { href: '/', title: 'Inicio' },
     { href: '/students', title: 'Estudiantes 2024' },
+    { href: '/sw-characters', title: 'Personajes SW' },
     { href: '/contact', title: 'Contacto' },
-    { href: '/about', title: 'About' },
+    { href: '/about', title: 'Acerda de' },
   ]
 
   return (
