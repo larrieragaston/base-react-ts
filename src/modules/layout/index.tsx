@@ -2,6 +2,9 @@ import { NavLink, Outlet } from 'react-router-dom'
 import '../../styles/layout.css'
 import subjectJSON from '../../data/subject-info.json'
 import { Subject } from '../../types/subject.types'
+import { Typography } from 'antd'
+
+const { Title } = Typography
 
 export const Layout = () => {
   const subject = subjectJSON as Subject
@@ -28,7 +31,7 @@ export const Layout = () => {
             ))}
           </ul>
         </nav>
-        <h1>Hola clase de {subject.name}</h1>
+        <Title>Hola clase de {subject.name}</Title>
         <main>
           <Outlet />
         </main>
