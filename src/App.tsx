@@ -4,6 +4,8 @@ import { StudentsList } from './modules/students'
 import { Contact } from './modules/contact'
 import { About } from './modules/about'
 import { Layout } from './modules/layout'
+import { SWCharacters } from './modules/SWCharacters'
+import { SWCharacterDetail } from './modules/characterDetail'
 
 export const App = () => (
   <div className="App">
@@ -12,6 +14,10 @@ export const App = () => (
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/students" element={<StudentsList />} />
+          <Route path="/sw-characters">
+            <Route index element={<SWCharacters />} />
+            <Route path=":id" element={<SWCharacterDetail />} />
+          </Route>
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
         </Route>
