@@ -6,6 +6,7 @@ import { About } from './modules/about'
 import { Layout } from './modules/layout'
 import { SWCharacters } from './modules/SWCharacters'
 import { SWCharacterDetail } from './modules/characterDetail'
+import { NotFound } from './modules/notFound'
 
 export const App = () => (
   <div className="App">
@@ -20,6 +21,7 @@ export const App = () => (
           </Route>
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>

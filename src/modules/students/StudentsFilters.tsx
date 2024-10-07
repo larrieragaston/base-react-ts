@@ -1,6 +1,10 @@
 import type { FC } from 'react'
 import { StudentsFiltersProps } from '../../types/student.types'
 import '../../styles/students.css'
+import { Button, Col, Input, Row } from 'antd'
+import { Typography } from 'antd'
+
+const { Title } = Typography
 
 export const StudentsFilters: FC<StudentsFiltersProps> = ({ isFiltered, setIsFiltered, searchText, setSearchText }) => {
   const onFilterClick = () => {
@@ -12,16 +16,18 @@ export const StudentsFilters: FC<StudentsFiltersProps> = ({ isFiltered, setIsFil
   }
 
   return (
-    <div className="students-filters">
-      <h3>Filtros</h3>
-
-      <button onClick={onFilterClick}>{isFiltered ? 'Quitar filtro' : 'Filtrar'} alumnos libres</button>
-      <input
-        type="text"
-        value={searchText}
-        onChange={handleInputChange}
-        placeholder="Ingrese nombre/apellido a buscar"
-      />
+    <div>
+      <Row gutter={16}>
+        <Col className="gutter-row" span={6}>
+          <Title level={3}>Filtros</Title>
+        </Col>
+        <Col className="gutter-row" span={6}>
+          <Button onClick={onFilterClick}>{isFiltered ? 'Quitar filtro' : 'Filtrar'} alumnos libres</Button>
+        </Col>
+        <Col className="gutter-row" span={6}>
+          <Input placeholder="Ingrese nombre/apellido a buscar" value={searchText} onChange={handleInputChange} />
+        </Col>
+      </Row>
     </div>
   )
 }

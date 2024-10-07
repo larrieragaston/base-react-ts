@@ -1,6 +1,9 @@
 import type { FC } from 'react'
 import type { StudentsTableProps } from '../../types/student.types'
 import { Student } from '../../components/Student'
+import { Typography } from 'antd'
+
+const { Title } = Typography
 
 export const StudentsTable: FC<StudentsTableProps> = ({ students }) => {
   return (
@@ -26,7 +29,7 @@ export const StudentsTable: FC<StudentsTableProps> = ({ students }) => {
           <p>La cantidad total de alumnos es: {students.length}</p>
         </>
       ) : (
-        <h3>No se encontraron alumnos para este curso!</h3>
+        <Title level={3}>No se encontraron alumnos para este curso!</Title>
       )}
     </>
   )

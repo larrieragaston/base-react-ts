@@ -6,6 +6,10 @@ import { StudentsFilters } from './StudentsFilters'
 import { StudentsTable } from './StudentsTable'
 import subjectJSON from '../../data/subject-info.json'
 import { Subject } from '../../types/subject.types'
+import { Spin, Typography } from 'antd'
+import { content } from '../../utils/content'
+
+const { Title } = Typography
 
 export const StudentsList: FC = () => {
   const students = studentsJSON as Array<StudentProps>
@@ -39,9 +43,11 @@ export const StudentsList: FC = () => {
 
   return (
     <>
-      <h2>Los saluda {subject.teacher}</h2>
+      <Title level={2}>Los saluda {subject.teacher}</Title>
       {isLoading ? (
-        <p>Cargando...</p>
+        <Spin tip="Cargando informacion del curso..." size="large">
+          {content}
+        </Spin>
       ) : (
         <>
           <StudentsFilters
