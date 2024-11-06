@@ -1,8 +1,7 @@
 import axios from 'axios'
-import { SWService } from '../types/SwServices.types'
 
 const api = axios.create({
-  baseURL: 'https://swapi.dev/api',
+  baseURL: 'http://localhost:4000',
   timeout: 1000 * 15, // 15 sec
 })
 
@@ -20,8 +19,4 @@ api.interceptors.response.use(
     Promise.reject(console.log(error))
 )
 
-export const swService: SWService = {
-  getRoot: () => api.get('/'),
-  getPeople: () => api.get(`/people`),
-  getPersonById: (id) => api.get(`/people/${id}`),
-}
+export default api
