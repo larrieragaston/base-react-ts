@@ -1,5 +1,5 @@
 import './App.css'
-import studentsJSON from '../students-2024.json'
+import studentsJSON from '../students-2025.json'
 import { useState, useEffect } from 'react'
 import type {FC} from 'react'
 import { Student, StudentData } from './Student'
