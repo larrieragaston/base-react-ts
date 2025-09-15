@@ -1,6 +1,6 @@
+import studentsJSON from '../../data/students-2025.json'
 import { useState, useEffect } from 'react'
 import type {FC} from 'react'
-import studentsJSON from '../../data/students-2024.json';
 import type { StudentProps } from '../../types/student.types';
 import { StudentsFilters } from './StudentsFilters';
 import { StudentsTable } from './StudentsTable';
@@ -25,14 +25,14 @@ export const StudentsList: FC = () => {
       setIsLoading(false)
     }, 5000)
     return () => clearTimeout(timer)
-  }, [])
+  }, [students])
 
 
   useEffect(() => {
     setFilteredStudents(students.filter(student => 
       (!isFiltered || student.attendance === "Regular") && 
       student.name.toLowerCase().includes(searchText.toLowerCase())))
-  }, [isFiltered, searchText])
+  }, [isFiltered, searchText, students])
 
   return (
     <>
