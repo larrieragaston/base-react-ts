@@ -1,5 +1,5 @@
 import type {FC} from 'react'
-import { StudentsFiltersProps } from '../../types/student.types'
+import type { StudentsFiltersProps } from '../../types/student.types'
 import '../../styles/students.css'
 
 export const StudentsFilters: FC<StudentsFiltersProps> = ({isFiltered, setIsFiltered, searchText, setSearchText}) => {
