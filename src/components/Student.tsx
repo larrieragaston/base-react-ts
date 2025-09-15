@@ -1,7 +1,7 @@
-import type {FC} from "react"
-import { StudentProps } from "../types/student.types"
+import type { FC } from 'react'
+import { StudentProps } from '../types/student.types'
 
-export const Student: FC<StudentProps> = ({idNumber, name, attendance, can_promote}) => (
+export const Student: FC<StudentProps> = ({ idNumber, name, attendance, can_promote }) => (
   <tr key={idNumber}>
     <td>{idNumber}</td>
     <td>{name}</td>
