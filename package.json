@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prettify": "prettier --write ./src"
   },
   "dependencies": {
     "react": "^19.1.1",
@@ -15,6 +16,8 @@
     "react-router-dom": "^7.9.1"
   },
   "devDependencies": {
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "3.6.2",
     "@eslint/js": "^9.35.0",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
