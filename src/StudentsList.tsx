@@ -1,10 +1,10 @@
 import './App.css'
+import studentsJSON from '../students-2025.json'
 import { useState, useEffect } from 'react'
 import type {FC} from 'react'
 import { StudentProps } from './Student'
 import { StudentsFilters } from './StudentsFilters';
 import { StudentsTable } from './StudentsTable';
-import studentsJSON from '../students-2024.json';
 
 export const StudentsList: FC = () => {
   const students = studentsJSON as Array<StudentProps>
