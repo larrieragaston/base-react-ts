@@ -2,7 +2,7 @@ import type {FC} from 'react'
 
 interface StudentsFiltersProps {
   isFiltered: boolean;
-  setIsFiltered: (isFiltered: boolean | ((prevValue: any) => boolean)) => void;
+  setIsFiltered: (isFiltered: boolean | ((prevValue: boolean) => boolean)) => void;
   searchText: string;
   setSearchText: (searchText: string) => void
 }

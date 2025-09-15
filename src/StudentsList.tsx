@@ -23,14 +23,14 @@ export const StudentsList: FC = () => {
       setIsLoading(false)
     }, 5000)
     return () => clearTimeout(timer)
-  }, [])
+  }, [students])
 
 
   useEffect(() => {
     setFilteredStudents(students.filter(student => 
       (!isFiltered || student.attendance === "Regular") && 
       student.name.toLowerCase().includes(searchText.toLowerCase())))
-  }, [isFiltered, searchText])
+  }, [isFiltered, searchText, students])
 
   return (
     <>
