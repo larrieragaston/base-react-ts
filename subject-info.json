@@ -1,0 +1,7 @@
+{
+  "name": "Programación III",
+  "teacher_id": 67516,
+  "teacher": "LARRIERA, Gaston Ariel",
+  "is_promotable": "S",
+  "correlative": ["Programación I", "Programación II", "Estructura y Base de datos"]
+}
