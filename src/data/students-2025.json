@@ -1,0 +1,116 @@
+[
+  {
+    "idNumber": 31296,
+    "name": "CABALLERO, Silvana",
+    "attendance": "Regular",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 31044,
+    "name": "CALVO, Jonathan Nahuel",
+    "attendance": "Regular",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 151980,
+    "name": "CARBONE, Adrian Francisco",
+    "attendance": "Regular",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 152509,
+    "name": "D'ALOISIO, Guido Esteban",
+    "attendance": "Regular",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 154296,
+    "name": "FABRO, Rocco Alejandro",
+    "attendance": "Regular",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 151954,
+    "name": "GARCIA, Sebastian Dario",
+    "attendance": "Regular",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 152842,
+    "name": "HELLER, María Pía",
+    "attendance": "Regular",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 151578,
+    "name": "LAINO Leonel César",
+    "attendance": "Regular",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 154460,
+    "name": "LONGO, Santiago Maximiliano",
+    "attendance": "Regular",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 153085,
+    "name": "LOPEZ, Santiago Malcolm",
+    "attendance": "Regular",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 152857,
+    "name": "MARTINEZ MARQUES, Juan Manuel",
+    "attendance": "Regular",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 153114,
+    "name": "MARTININI Ruben Ariel",
+    "attendance": "Regular",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 154288,
+    "name": "METTA, Ivan",
+    "attendance": "Regular",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 154372,
+    "name": "OLMEDO, Enzo Norberto",
+    "attendance": "Regular",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 150602,
+    "name": "PIOVAROLI, Joana",
+    "attendance": "Regular",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 152497,
+    "name": "SPADONI, Agustín",
+    "attendance": "Regular",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 151931,
+    "name": "SPINELLI, Franco Andrés",
+    "attendance": "Regular",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 152673,
+    "name": "TEPPER, Ian Alan",
+    "attendance": "Regular",
+    "can_promote": "S"
+  },
+  {
+    "idNumber": 153987,
+    "name": "VIGNAU, Tomás Santiago",
+    "attendance": "Regular",
+    "can_promote": "S"
+  }
+]
