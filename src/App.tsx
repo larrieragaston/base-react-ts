@@ -3,7 +3,7 @@ import { Home } from './modules/home'
 import { StudentsList } from './modules/students'
 import { Contact } from './modules/contact'
 import { About } from './modules/about'
-import { Layout } from './modules/layout'
+import { LayoutCustom } from './modules/layout'
 import { SWCharacters } from './modules/SWCharacters'
 import { SWCharacterDetail } from './modules/characterDetail'
 import { NotFound } from './modules/notFound'
@@ -12,7 +12,7 @@ export const App = () => (
   <div className="App">
     <BrowserRouter>
       <Routes>
-        <Route element={<Layout />}>
+        <Route element={<LayoutCustom />}>
           <Route path="/" element={<Home />} />
           <Route path="/students" element={<StudentsList />} />
           <Route path="/sw-characters">
