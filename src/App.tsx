@@ -1,14 +1,7 @@
 import './App.css';
-import subjectJSON from '../subject-info.json';
-import { StudentsList } from './StudentsList';
-
-interface Subject {
-  name: string,
-  teacher_id: number,
-  teacher: string,
-  is_promotable: "S" | "N",
-  correlative: Array<string>
-}
+import subjectJSON from './data/subject-info.json';
+import { StudentsList } from './modules/students';
+import { Subject } from './types/subject.types';
 
 function App() {
   const subject = subjectJSON as Subject

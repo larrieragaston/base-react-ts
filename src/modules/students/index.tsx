@@ -1,8 +1,7 @@
-import './App.css'
-import studentsJSON from '../students-2025.json'
+import studentsJSON from '../../data/students-2025.json'
 import { useState, useEffect } from 'react'
 import type {FC} from 'react'
-import { StudentProps } from './Student'
+import type { StudentProps } from '../../types/student.types';
 import { StudentsFilters } from './StudentsFilters';
 import { StudentsTable } from './StudentsTable';
 
