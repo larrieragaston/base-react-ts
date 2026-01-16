@@ -1,5 +1,9 @@
+import { Typography } from 'antd'
+
+const { Title } = Typography
+
 export const Home = () => (
   <>
-    <h2>Home</h2>
+    <Title level={2}>Home</Title>
   </>
 )
